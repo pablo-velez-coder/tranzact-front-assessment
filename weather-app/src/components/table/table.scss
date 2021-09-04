@@ -1,0 +1,26 @@
+.cities{
+    &__table{
+        margin-top: 3rem;
+        backdrop-filter: blur(2rem);
+        background: linear-gradient(
+            to right bottom,
+            rgba(255, 255, 255, 0.7),
+            rgba(255, 255, 255, 0.3)
+          );
+          border-radius: 6px;
+          >thead > tr > th:first-child{
+            padding: 1rem 0.5rem 1rem 1rem;  
+          }
+        >tbody > tr >td:first-child{
+            padding: 1rem 0.5rem 1rem 1rem; 
+        }
+    }
+    &__row{
+       height:40px;
+       cursor: pointer;
+       transition: background-color 0.3s ease-in-out;
+       &:hover{
+           background-color: #aee1f2d5;
+       }
+    }
+}

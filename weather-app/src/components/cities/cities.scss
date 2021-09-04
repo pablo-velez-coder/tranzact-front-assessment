@@ -1,0 +1,117 @@
+.cities  {
+    h2 {
+        padding: 1em;
+        padding-bottom: 0;
+        font-weight: 600;
+    }
+}
+.cities__filters {
+    padding:1.5rem 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    position:sticky;
+    top:96.01px;
+    z-index: 10;
+    background-color: #fff;
+    border-bottom: 1px solid #cacaca;
+    @media (max-width:400px){
+        padding:1rem; 
+    }
+}
+.cities__filter {
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    width: 26%;
+    display: flex;
+}
+
+.cities__formatTitle {
+    margin-top: 3rem;
+    padding-left: 1.4rem;
+    margin-bottom: -3rem;
+}
+
+.cities__filter  {
+
+     form {
+         padding-left: 0.5rem;
+        input {
+            border: none;
+            outline-width: 0;
+            border-radius: 20px;
+            padding:0.5em 1rem;
+            width:80%
+
+        }
+     } 
+}
+.cities__filter{
+    form {
+        button {
+            display: none;
+        }
+    }
+  
+}
+
+.cities__select {
+    background-color: silver !important;
+    margin-left: 1rem;
+    padding: 0 0.8rem;
+    border-radius: 5px;
+}
+
+.cities__formatSelect {
+    background-color: silver !important;
+    margin-left: 1rem;
+    padding: 0 0.8rem;
+    border-radius: 5px;
+}
+
+.cities__orderSelect {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+
+    align-items: center;
+    h5 {
+        margin-left: 2rem;
+    }
+}
+
+.cities__orderName {
+    margin:0 1rem;
+}
+
+.cities__orderFormat {
+    margin:0 1rem;
+}
+
+@media screen and (max-width: 600px) {
+    .cities__filters {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 10em;
+    }
+
+    .cities__filter {
+        border: 1px solid lightgray;
+        border-radius: 20px;
+        width: 70%;
+    }
+    .cities__orderSelect {
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.cities-list{
+    padding:2rem;
+    padding-top: 0;
+    @media (max-width:450px){
+        padding:0.5rem;
+    }
+}

@@ -1,0 +1,41 @@
+.city-card{
+    padding:1.5rem;
+    text-align: center;
+    box-shadow:7px 11px 12px rgba(0,0,0,0.08);
+    margin-bottom: 0.4rem;
+    border-radius:7px;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.3)
+      );
+    opacity: 0.8;
+    cursor: pointer;
+    transition:transform 0.3s ease-in-out;
+    >p{
+        margin-bottom: 0;
+    }
+    &:hover{
+        transform: scale(1.01);
+    }
+    >div{
+        display:flex;
+
+    }
+    >div>p:first-child{
+        font-weight: 800;
+    }
+}
+@media (max-width:450px){
+    .city-card{
+padding:1rem;
+
+        >div{
+            flex-direction: column;
+    
+        }
+        >div>p:last-child{
+            margin-bottom: 0;
+        }
+    }
+}
